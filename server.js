@@ -14,7 +14,6 @@ app.use(morgan('dev'))
 //Api Rest para la ruta principal de comic-verse
 app.get('/',login, applications)
 
-
 //Servidor escuchando por el puerto
 app.listen(app.get('port'), ()=>{
     console.log(`Server running on port ${app.get('port')}`);
